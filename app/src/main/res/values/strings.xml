@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Quiz</string>
+
+    <string name="title">How well do you know movies? </string>
+    <string name="subtitle">Is this quote from that movie </string>
+    <string name="explanation">\tIn this quiz are four types of questions: \n\t\t1. recognize if the quote belongs to the movie from the picture, \n\t\t2. recognize the quote and link it to the movie (only one from those who are listed), \n\t\t3. write the name of the movie, \n\t\t4. recognize the movie name and actor who said the quote \n\tHave fun and good luck!</string>
+
+    <string name="quote1">1.There\'s no place like home. </string>
+
+    <string name="quote2">2. Where we\'re going,  we don\'t need roads.</string>
+    <string name="movieOption2.1">Back to the Future</string>
+    <string name="movieOption2.2">Fast and Furious</string>
+    <string name="movieOption2.3">Men in Black</string>
+
+    <string name="quote3">3. Mama always said life was like a box of chocolates. \nYou never know what you\'re gonna get.</string>
+    <string name="movieOption3.1">Forrest Gump</string>
+    <string name="movieOption3.2">The Shawshank Redemption</string>
+    <string name="actorOption3.1">Morgan Freeman</string>
+    <string name="actorOption3.2">Tom Hanks</string>
+
+    <string name="quote4">4. Keep your friends close,\n but your enemies closer.</string>
+
+    <string name="quote5">5. As my plastic surgeon always said,\n if you gotta go, go with a smile.</string>
+
+    <string name="quote6">6. May the Force be with you</string>
+    <string name="movieOption6.1">Star Trek</string>
+    <string name="movieOption6.2">Guardians of the Galaxy</string>
+    <string name="movieOption6.3">Star Wars</string>
+
+    <string name="quote7">7. Say hello to my little friend</string>
+    <string name="movieOption7.1">Pulp Fiction</string>
+    <string name="movieOption7.2">Scarface</string>
+    <string name="movieOption7.3">Civil War</string>
+
+    <string name="quote8">8. My precious</string>
+
+    <string name="quote9">9. I\’m the king of the world!</string>
+
+    <string name="quote10">10. I\’ll be back</string>
+    <string name="movieOption10.1">Predator</string>
+    <string name="movieOption10.2">Terminator</string>
+    <string name="actorOption10.1">Arnold Schwarzenegger</string>
+    <string name="actorOption10.2">Sylvester Stallone</string>
+
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+
+    <string name="result">Submit</string>
+    <string name="zero">0</string>
+</resources>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    tools:context="com.exsample.android.quiz.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/margin_medium"
+            android:text="@string/title"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/explanation"
+            style="@style/RadioButtonVertical"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:text="@string/explanation" />
+
+        <TextView
+            android:id="@+id/quote1"
+            style="@style/MyTextQuote"
+            android:layout_below="@id/explanation"
+            android:text="@string/quote1"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/q1_editText"
+            style="@style/MyEditText"
+            android:layout_below="@id/quote1"
+            tools:ignore="TextFields" />
+
+        <TextView
+            android:id="@+id/quote2"
+            style="@style/MyTextQuote"
+            android:layout_below="@id/q1_editText"
+            android:text="@string/quote2"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:id="@+id/answers2"
+            style="@style/Layout"
+            android:layout_below="@id/quote2">
+
+            <RadioGroup
+                android:id="@+id/q2_radioGroup"
+                style="@style/RadioGroupHorizontal">
+
+                <RadioButton
+                    android:id="@+id/q2_radioButton1"
+                    style="@style/RadioButtonHorizontal"
+                    android:text="@string/movieOption2.1" />
+
+                <RadioButton
+                    android:id="@+id/q2_radioButton2"
+                    style="@style/RadioButtonHorizontal"
+                    android:text="@string/movieOption2.2" />
+
+                <RadioButton
+                    android:id="@+id/q2_radioButton3"
+                    style="@style/RadioButtonHorizontal"
+                    android:text="@string/movieOption2.3" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/quote3"
+            style="@style/MyTextQuote"
+            android:layout_below="@id/answers2"
+            android:text="@string/quote3"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:id="@+id/answers3"
+            style="@style/Layout"
+            android:layout_below="@id/quote3">
+
+            <LinearLayout style="@style/LayoutAnswer">
+
+                <CheckBox
+                    android:id="@+id/q3_checkBox1"
+                    style="@style/MyCheckBox"
+                    android:text="@string/actorOption3.2" />
+
+                <CheckBox
+                    android:id="@+id/q3_checkBox2"
+                    style="@style/MyCheckBox"
+                    android:text="@string/movieOption3.1" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LayoutAnswer">
+
+                <CheckBox
+                    android:id="@+id/q3_checkBox3"
+                    style="@style/MyCheckBox"
+                    android:text="@string/movieOption3.2" />
+
+                <CheckBox
+                    android:id="@+id/q3_checkBox4"
+                    style="@style/MyCheckBox"
+                    android:text="@string/actorOption3.1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/quote4"
+            style="@style/MyTextQuote"
+            android:layout_below="@id/answers3"
+            android:text="@string/quote4"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/q4_editText"
+            style="@style/MyEditText"
+            android:layout_below="@id/quote4"
+            tools:ignore="TextFields" />
+
+        <TextView
+            android:id="@+id/quote5"
+            style="@style/MyTextQuote"
+            android:layout_below="@id/q4_editText"
+            android:text="@string/quote5"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:id="@+id/answers5"
+            style="@style/Layout"
+            android:layout_below="@id/quote5">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:src="@drawable/picture2"
+                tools:ignore="ContentDescription" />
+
+            <RadioGroup
+                android:id="@+id/q5_radioGroup"
+                style="@style/RadioGroupVertical">
+
+                <RadioButton
+                    android:id="@+id/q5_radioButton1"
+                    style="@style/RadioButtonVertical"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@+id/q5_radioButton2"
+                    style="@style/RadioButtonVertical"
+                    android:text="@string/no" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/quote6"
+            style="@style/MyTextQuote"
+            android:layout_below="@id/answers5"
+            android:text="@string/quote6"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:id="@+id/answers6"
+            style="@style/Layout"
+            android:layout_below="@id/quote6">
+
+            <RadioGroup
+                android:id="@+id/q6_radioGroup"
+                style="@style/RadioGroupHorizontal">
+
+                <RadioButton
+                    android:id="@+id/q6_radioButton1"
+                    style="@style/RadioButtonHorizontal"
+                    android:text="@string/movieOption6.1" />
+
+                <RadioButton
+                    android:id="@+id/q6_radioButton2"
+                    style="@style/RadioButtonHorizontal"
+                    android:text="@string/movieOption6.2" />
+
+                <RadioButton
+                    android:id="@+id/q6_radioButton3"
+                    style="@style/RadioButtonHorizontal"
+                    android:text="@string/movieOption6.3" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/quote7"
+            style="@style/MyTextQuote"
+            android:layout_below="@id/answers6"
+            android:text="@string/quote7"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:id="@+id/answers7"
+            style="@style/Layout"
+            android:layout_below="@id/quote7">
+
+            <RadioGroup
+                android:id="@+id/q7_radioGroup"
+                style="@style/RadioGroupHorizontal">
+
+                <RadioButton
+                    android:id="@+id/q7_radioButton1"
+                    style="@style/RadioButtonHorizontal"
+                    android:text="@string/movieOption7.1" />
+
+                <RadioButton
+                    android:id="@+id/q7_radioButton2"
+                    style="@style/RadioButtonHorizontal"
+                    android:text="@string/movieOption7.2" />
+
+                <RadioButton
+                    android:id="@+id/q7_radioButton3"
+                    style="@style/RadioButtonHorizontal"
+                    android:text="@string/movieOption7.3" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/quote8"
+            style="@style/MyTextQuote"
+            android:layout_below="@id/answers7"
+            android:text="@string/quote8"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/q8_editText"
+            style="@style/MyEditText"
+            android:layout_below="@id/quote8"
+            tools:ignore="TextFields" />
+
+        <TextView
+            android:id="@+id/quote9"
+            style="@style/MyTextQuote"
+            android:layout_below="@id/q8_editText"
+            android:text="@string/quote9"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:id="@+id/answers9"
+            style="@style/Layout"
+            android:layout_below="@id/quote9">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:src="@drawable/picture3"
+                tools:ignore="ContentDescription" />
+
+            <RadioGroup
+                android:id="@+id/q9_radioGroup"
+                style="@style/RadioGroupVertical">
+
+                <RadioButton
+                    android:id="@+id/q9_radioButton1"
+                    style="@style/RadioButtonVertical"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    style="@style/RadioButtonVertical"
+                    android:text="@string/no" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/quote10"
+            style="@style/MyTextQuote"
+            android:layout_below="@id/answers9"
+            android:text="@string/quote10"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:id="@+id/answers10"
+            style="@style/Layout"
+            android:layout_below="@id/quote10">
+
+            <LinearLayout style="@style/LayoutAnswer">
+
+                <CheckBox
+                    android:id="@+id/q10_checkBox1"
+                    style="@style/MyCheckBox"
+                    android:text="@string/actorOption10.1" />
+
+                <CheckBox
+                    android:id="@+id/q10_checkBox2"
+                    style="@style/MyCheckBox"
+                    android:text="@string/movieOption10.1" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LayoutAnswer">
+
+                <CheckBox
+                    android:id="@+id/q10_checkBox3"
+                    style="@style/MyCheckBox"
+                    android:text="@string/movieOption10.2" />
+
+                <CheckBox
+                    android:id="@+id/q10_checkBox4"
+                    style="@style/MyCheckBox"
+                    android:text="@string/actorOption10.2" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            style="@style/MyTextQuote"
+            android:layout_below="@id/answers10"
+            android:layout_centerInParent="true"
+            android:onClick="checkQuiz"
+            android:text="@string/result" />
+    </RelativeLayout>
+</ScrollView>
